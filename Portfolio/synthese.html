@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tableau de Synthèse — BTS SIO SISR</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header>
+    <a href="index.html" class="logo">DDM · Portfolio</a>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="presentation.html">Présentation</a>
+      <a href="synthese.html">Synthèse</a>
+      <a href="parcours.html">Parcours</a>
+      <a href="realisations.html">Réalisations</a>
+      <a href="veille.html">Veille</a>
+      <a href="competences.html">Compétences</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn">☰</button>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav">
+    <button class="fermer-menu" id="fermerMenu">✕</button>
+    <a href="index.html">Accueil</a>
+    <a href="presentation.html">Présentation</a>
+    <a href="synthese.html">Synthèse</a>
+    <a href="parcours.html">Parcours</a>
+    <a href="realisations.html">Réalisations</a>
+    <a href="veille.html">Veille</a>
+    <a href="competences.html">Compétences</a>
+  </div>
+
+
+  <!-- BANNIÈRE DE LA PAGE -->
+  <div class="hero-page">
+    <div class="hero-page-fond" style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1920');"></div>
+    <div class="hero-page-contenu">
+      <div class="fil-ariane">
+        <a href="index.html">Accueil</a> › <span>Tableau de Synthèse</span>
+      </div>
+      <h1>📊 Tableau de <span>Synthèse</span></h1>
+      <p>Récapitulatif des compétences BTS SIO validées sur les deux années.</p>
+    </div>
+  </div>
+
+
+  <!-- SECTION : téléchargement -->
+  <section>
+
+    <div class="boite-dl cacher" style="margin-bottom: 55px;">
+      <div>
+        <h3>📥 Tableau de synthèse complet</h3>
+        <p>Version Excel / PDF du tableau officiel avec toutes les activités professionnelles.</p>
+      </div>
+      <a href="#" class="btn-bleu">⬇ Télécharger (PDF)</a>
+    </div>
+
+
+    <!-- BLOC 1 : Compétences communes -->
+    <div class="en-tete" style="text-align: left; margin-bottom: 20px;">
+      <span class="etiquette">Bloc 1</span>
+      <h2 class="cacher" style="text-align: left; font-size: 1.5rem;">
+        Support et mise à disposition de <span>services informatiques</span>
+      </h2>
+    </div>
+
+    <div class="tableau-wrapper cacher d1">
+      <table>
+        <thead>
+          <tr>
+            <th>Code</th>
+            <th>Compétence</th>
+            <th>Activités réalisées</th>
+            <th>Période</th>
+            <th>Statut</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong style="color: var(--blanc);">B1.1</strong></td>
+            <td>Gérer le patrimoine informatique</td>
+            <td>Inventaire parc, GLPI, gestion des licences</td>
+            <td>Stage 1 — 2026</td>
+            <td><span class="statut ok">Validée</span></td>
+          </tr>
+          <tr>
+            <td><strong style="color: var(--blanc);">B1.2</strong></td>
+            <td>Répondre aux incidents et aux demandes</td>
+            <td>Tickets support N1/N2, dépannage postes, incidents réseau</td>
+            <td>Stage 1 — 2026</td>
+            <td><span class="statut ok">Validée</span></td>
+          </tr>
+          <tr>
+            <td><strong style="color: var(--blanc);">B1.3</strong></td>
+            <td>Développer la présence en ligne</td>
+            <td>Mise à jour intranet, gestion DNS externe</td>
+            <td>Formation — 2026</td>
+            <td><span class="statut en-cours">En cours</span></td>
+          </tr>
+          <tr>
+            <td><strong style="color: var(--blanc);">B1.4</strong></td>
+            <td>Travailler en mode projet</td>
+            <td>Projet réseau, rédaction cahier des charges, réunions</td>
+            <td>Stage 2 — 2027</td>
+            <td><span class="statut ok">Validée</span></td>
+          </tr>
+          <tr>
+            <td><strong style="color: var(--blanc);">B1.5</strong></td>
+            <td>Mettre à disposition un service informatique</td>
+            <td>Déploiement serveurs, configuration DHCP/DNS, mise en prod</td>
+            <td>Stage 2 — 2027</td>
+            <td><span class="statut ok">Validée</span></td>
+          </tr>
+          <tr>
+            <td><strong style="color: var(--blanc);">B1.6</strong></td>
+            <td>Organiser son développement professionnel</td>
+            <td>Veille technologique, certifications (CCNA Intro), portfolio</td>
+            <td>2025–2027</td>
+            <td><span class="statut en-cours">En cours</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+    <!-- BLOC 2 : Compétences SISR -->
+    <div class="en-tete" style="text-align: left; margin-bottom: 20px; margin-top: 50px;">
+      <span class="etiquette">Bloc 2 — SISR</span>
+      <h2 class="cacher" style="text-align: left; font-size: 1.5rem;">
+        Administration des <span>systèmes et des réseaux</span>
+      </h2>
+    </div>
+
+    <div class="tableau-wrapper cacher d1">
+      <table>
+        <thead>
+          <tr>
+            <th>Code</th>
+            <th>Compétence</th>
+            <th>Activités réalisées</th>
+            <th>Période</th>
+            <th>Statut</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong style="color: var(--blanc);">B2.1</strong></td>
+            <td>Exploiter l'infrastructure et assurer la continuité</td>
+            <td>Windows Server 2022, AD DS, WSUS, GPO, sauvegardes Veeam</td>
+            <td>Stage 2 — 2027</td>
+            <td><span class="statut ok">Validée</span></td>
+          </tr>
+          <tr>
+            <td><strong style="color: var(--blanc);">B2.2</strong></td>
+            <td>Assurer la sécurité de l'infrastructure</td>
+            <td>Firewall pfSense, VLANs, VPN OpenVPN, ACLs, durcissement Linux</td>
+            <td>Stage 2 — 2027</td>
+            <td><span class="statut ok">Validée</span></td>
+          </tr>
+          <tr>
+            <td><strong style="color: var(--blanc);">B2.3</strong></td>
+            <td>Concevoir et développer des solutions d'infrastructure</td>
+            <td>Virtualisation vSphere, Docker, automatisation Bash/PowerShell</td>
+            <td>Stage 2 — 2027</td>
+            <td><span class="statut en-cours">En cours</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+    <!-- LÉGENDE -->
+    <div class="carte cacher" style="max-width: 480px; margin-top: 40px;">
+      <h3 style="margin-bottom: 15px;">📌 Légende des statuts</h3>
+      <p style="margin-bottom: 10px;">
+        <span class="statut ok">Validée</span>
+        &nbsp; Compétence entièrement validée
+      </p>
+      <p style="margin-bottom: 10px;">
+        <span class="statut en-cours">En cours</span>
+        &nbsp; Compétence partiellement validée
+      </p>
+      <p>
+        <span class="statut prevu">Planifiée</span>
+        &nbsp; Compétence à valider prochainement
+      </p>
+    </div>
+
+  </section>
+
+
+  <footer>
+    © 2026 · <span>Dicko Daouda Mahama</span> · Portfolio BTS SIO SISR
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

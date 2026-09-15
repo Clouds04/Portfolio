@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Présentation — Dicko Daouda Mahama</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header>
+    <a href="index.html" class="logo">DDM · Portfolio</a>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="presentation.html">Présentation</a>
+      <a href="synthese.html">Synthèse</a>
+      <a href="parcours.html">Parcours</a>
+      <a href="realisations.html">Réalisations</a>
+      <a href="veille.html">Veille</a>
+      <a href="competences.html">Compétences</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn">☰</button>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav">
+    <button class="fermer-menu" id="fermerMenu">✕</button>
+    <a href="index.html">Accueil</a>
+    <a href="presentation.html">Présentation</a>
+    <a href="synthese.html">Synthèse</a>
+    <a href="parcours.html">Parcours</a>
+    <a href="realisations.html">Réalisations</a>
+    <a href="veille.html">Veille</a>
+    <a href="competences.html">Compétences</a>
+  </div>
+
+
+  <!-- BANNIÈRE DE LA PAGE -->
+  <div class="hero-page">
+    <div class="hero-page-fond" style="background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1920');"></div>
+    <div class="hero-page-contenu">
+      <div class="fil-ariane">
+        <a href="index.html">Accueil</a> › <span>Présentation</span>
+      </div>
+      <h1>👤 Présentation <span>Personnelle</span></h1>
+      <p>Mon profil, mon projet professionnel et mes liens de contact.</p>
+    </div>
+  </div>
+
+
+  <!-- SECTION PRINCIPALE : profil + infos -->
+  <section>
+    <div style="display: grid; grid-template-columns: 280px 1fr; gap: 35px; align-items: start;">
+
+      <!-- CARTE PROFIL (colonne gauche) -->
+      <div class="profil-carte cacher">
+        <!-- Avatar avec les initiales -->
+        <div class="avatar">DDM</div>
+
+        <h2>Dicko Daouda Mahama</h2>
+        <div class="role">BTS SIO — Option SISR</div>
+        <div class="session">Session 2025 – 2027</div>
+
+        <!-- Liens de contact -->
+        <a href="#" class="lien-social">
+          📄 Télécharger mon CV
+        </a>
+        <a href="#" class="lien-social" target="_blank">
+          💼 LinkedIn
+        </a>
+        <a href="#" class="lien-social" target="_blank">
+          🐙 GitHub / GitLab
+        </a>
+        <a href="mailto:dickodaouda2004@gmail.com" class="lien-social">
+          ✉️ dickodaouda2004@gmail.com
+        </a>
+      </div>
+
+
+      <!-- INFORMATIONS (colonne droite) -->
+      <div>
+
+        <!-- Bloc : Qui suis-je -->
+        <div class="carte cacher" style="margin-bottom: 20px;">
+          <h3 style="color: var(--bleu-clair); margin-bottom: 12px;">🙋 Qui suis-je ?</h3>
+          <p>
+            Passionné par les technologies de l'information depuis mon plus jeune âge,
+            j'ai choisi la filière BTS SIO option SISR pour concrétiser mon intérêt pour
+            l'administration des systèmes et des réseaux.
+          </p>
+          <br>
+          <p>
+            Rigoureux et curieux, j'apprécie les environnements techniques complexes
+            où chaque problème est une opportunité d'apprendre. Au cours de ma formation,
+            j'ai acquis des compétences en Windows Server, Linux, réseau Cisco et virtualisation.
+          </p>
+        </div>
+
+        <!-- Bloc : Projet professionnel -->
+        <div class="carte cacher d1" style="margin-bottom: 20px;">
+          <h3 style="color: var(--bleu-clair); margin-bottom: 12px;">🎯 Projet professionnel</h3>
+          <p>
+            Mon objectif est d'obtenir mon BTS SIO SISR, puis de poursuivre en
+            Bachelor ou Licence Pro Réseaux & Cybersécurité.
+          </p>
+          <br>
+          <p>
+            À moyen terme, je souhaite évoluer vers un poste
+            d'<strong style="color: var(--blanc);">administrateur systèmes et réseaux</strong>
+            ou d'<strong style="color: var(--blanc);">ingénieur infrastructure</strong>,
+            avec une spécialisation en cybersécurité (CCNA, Security+).
+          </p>
+        </div>
+
+        <!-- Bloc : Pourquoi SISR -->
+        <div class="carte cacher d2">
+          <h3 style="color: var(--bleu-clair); margin-bottom: 12px;">✅ Pourquoi le SISR ?</h3>
+          <p>
+            J'ai choisi l'option SISR car l'aspect opérationnel m'attire davantage
+            que le développement logiciel : comprendre comment les réseaux fonctionnent,
+            sécuriser des systèmes et garantir la disponibilité des services.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- SECTION : Image + centres d'intérêt -->
+  <section style="padding-top: 0;">
+    <div class="avec-image inverse cacher">
+
+      <img
+        src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?q=80&w=800"
+        alt="Espace de travail informatique"
+        style="height: 300px;"
+      >
+
+      <div class="texte">
+        <span class="etiquette">Centres d'intérêt</span>
+        <h3>Ce qui me passionne</h3>
+        <p>En dehors des cours, je m'intéresse à :</p>
+        <div class="tags" style="margin-top: 15px;">
+          <span class="tag">🔐 Cybersécurité</span>
+          <span class="tag">☁️ Cloud</span>
+          <span class="tag">🐧 Linux</span>
+          <span class="tag">🏠 Home Lab</span>
+          <span class="tag">🎮 Tech et Gaming</span>
+          <span class="tag">📡 Réseaux</span>
+          <span class="tag">🤖 Automatisation</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- SECTION : Téléchargement CV -->
+  <section style="padding-top: 0; padding-bottom: 100px;">
+    <div class="boite-dl cacher">
+      <div>
+        <h3>📄 Curriculum Vitae</h3>
+        <p>Mon CV avec mes expériences, formations et compétences techniques.</p>
+      </div>
+      <a href="#" class="btn-bleu">⬇ Télécharger le CV (PDF)</a>
+    </div>
+  </section>
+
+
+  <footer>
+    © 2026 · <span>Dicko Daouda Mahama</span> · Portfolio BTS SIO SISR
+  </footer>
+
+  <script src="script.js"></script>
+
+  <!-- Sur mobile : la colonne profil passe au-dessus -->
+  <style>
+    @media (max-width: 900px) {
+      section > div[style*="grid-template-columns: 280px"] {
+        grid-template-columns: 1fr !important;
+      }
+    }
+  </style>
+
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parcours — BTS SIO SISR</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header>
+    <a href="index.html" class="logo">DDM · Portfolio</a>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="presentation.html">Présentation</a>
+      <a href="synthese.html">Synthèse</a>
+      <a href="parcours.html">Parcours</a>
+      <a href="realisations.html">Réalisations</a>
+      <a href="veille.html">Veille</a>
+      <a href="competences.html">Compétences</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn">☰</button>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav">
+    <button class="fermer-menu" id="fermerMenu">✕</button>
+    <a href="index.html">Accueil</a>
+    <a href="presentation.html">Présentation</a>
+    <a href="synthese.html">Synthèse</a>
+    <a href="parcours.html">Parcours</a>
+    <a href="realisations.html">Réalisations</a>
+    <a href="veille.html">Veille</a>
+    <a href="competences.html">Compétences</a>
+  </div>
+
+
+  <!-- BANNIÈRE DE LA PAGE -->
+  <div class="hero-page">
+    <div class="hero-page-fond" style="background-image: url('https://images.unsplash.com/photo-1562408590-e32931084e23?q=80&w=1920');"></div>
+    <div class="hero-page-contenu">
+      <div class="fil-ariane">
+        <a href="index.html">Accueil</a> › <span>Parcours Professionnel</span>
+      </div>
+      <h1>🏢 Parcours <span>Professionnel</span></h1>
+      <p>Mon cursus scolaire et mes expériences en entreprise.</p>
+    </div>
+  </div>
+
+
+  <!-- SECTION : FRISE CHRONOLOGIQUE -->
+  <section>
+    <div class="en-tete">
+      <span class="etiquette">Chronologie</span>
+      <h2 class="cacher">Mon <span>parcours</span></h2>
+      <div class="trait cacher d1"></div>
+    </div>
+
+    <div class="timeline">
+
+      <!-- Bac -->
+      <div class="tl-item tl-gauche cacher">
+        <div class="tl-contenu">
+          <div class="tl-date">2018 – 2021</div>
+          <h3>Baccalauréat Général</h3>
+          <h4>Spécialités Maths et Physique — Lycée Liberté</h4>
+          <p>Baccalauréat obtenu avec mention.</p>
+        </div>
+      </div>
+
+      <!-- Licence -->
+      <div class="tl-item tl-droite cacher">
+        <div class="tl-contenu">
+          <div class="tl-date">Septembre 2022</div>
+          <h3>Entrée en Licence Sciences de la Matière</h3>
+          <h4>Sorbonne Université</h4>
+          <p>Licence en sciences de la matière, avec les spécialités Maths et Physique.</p>
+        </div>
+      </div>
+
+      <!-- Entrée BTS -->
+      <div class="tl-item tl-droite cacher">
+        <div class="tl-contenu">
+          <div class="tl-date">Septembre 2025</div>
+          <h3>Entrée en BTS SIO</h3>
+          <h4>Option SISR — Ingetis/CFA Itis</h4>
+          <p>Début de la formation spécialité Solutions d'Infrastructure, Systèmes et Réseaux.</p>
+        </div>
+      </div>
+
+      <!-- Stage 1 -->
+      <div class="tl-item tl-gauche cacher">
+        <div class="tl-contenu">
+          <div class="tl-date">Juin – Juillet 2026 · 5 semaines</div>
+          <h3>Stage 1ère année</h3>
+          <h4>SimpDataConsulting 
+          Saint-Ouen-l'Aumone </h4>
+          <p>Stage de découverte, secteur informatique.</p>
+          <ul>
+            <li>Technicien Support Informatique</li>
+            <li>Installation de Windows Server</li>
+            <li>Configuration de Windows Server</li>
+            <li>Active Directory</li>
+            <li>Mise en place de VPN avec un Raspberry Pi</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 2e année -->
+      <div class="tl-item tl-droite cacher">
+        <div class="tl-contenu">
+          <div class="tl-date">Septembre 2026</div>
+          <h3>Entrée en 2ème année</h3>
+          <h4>BTS SIO SISR — Ingetis/CFA Itis</h4>
+          <p>Approfondissement en administration système, sécurité et virtualisation.</p>
+        </div>
+      </div>
+
+      <!-- Stage 2 -->
+      <div class="tl-item tl-gauche cacher">
+        <div class="tl-contenu">
+          <div class="tl-date">Novembre – Decembre 2027 · 5 semaines</div>
+          <h3>Stage 2ème année</h3>
+          <h4>[Nom de l'entreprise] — [Ville]</h4>
+          <p>Stage approfondi en administration d'infrastructure.</p>
+          <ul>
+            <li>Administration Windows Server 2022 (AD, DNS, DHCP)</li>
+            <li>Virtualisation avec VMware ESXi</li>
+            <li>Configuration VLANs et firewall pfSense</li>
+            <li>Déploiement supervision Zabbix</li>
+          </ul>
+        </div>
+      </div>
+
+
+  <!-- SECTION : Fiches de Stage avec images -->
+  <section style="padding-top: 20px; padding-bottom: 100px;">
+    <div class="en-tete">
+      <span class="etiquette">Expériences</span>
+      <h2 class="cacher">Fiches de <span>Stage</span></h2>
+      <div class="trait cacher d1"></div>
+    </div>
+
+    <div class="grille-2">
+
+      <!-- Fiche stage 1 -->
+      <div class="realisation cacher d1">
+        <img
+          src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=800"
+          alt="Bureau entreprise"
+        >
+        <div class="realisation-corps">
+          <div class="num">Stage 1ère année</div>
+          <h3>SimpDataConsulting</h3>
+          <p class="contexte">Juin – Juillet 2026 · 5 semaines · Saint-Ouen-l'Aumone</p>
+          <div class="tags">
+            <span class="tag">Technicien Support Informatique</span>
+            <span class="tag">Installation Windows Server</span>
+            <span class="tag">Configuration Windows Server</span>
+            <span class="tag">Active Directory</span>
+            <span class="tag">Mise en place de VPN avec un Raspberry Pi</span>
+
+          </div>
+          <br>
+          <a href="#" class="lien-doc">📄 Attestation de stage →</a>
+        </div>
+      </div>
+
+      <!-- Fiche stage 2 -->
+      <div class="realisation cacher d2">
+        <img
+          src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=800"
+          alt="Salle serveur entreprise"
+        >
+        <div class="realisation-corps">
+          <div class="num">Stage 2ème année</div>
+          <h3>[Nom de l'entreprise]</h3>
+          <p class="contexte">Avril – Mai 2027 · 6 semaines · [Ville]</p>
+          <div class="tags">
+            <span class="tag">Windows Server</span>
+            <span class="tag">VMware ESXi</span>
+            <span class="tag">pfSense</span>
+            <span class="tag">Zabbix</span>
+            <span class="tag">VLANs</span>
+          </div>
+          <br>
+          <a href="#" class="lien-doc">📄 Attestation de stage →</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <footer>
+    © 2026 · <span>Dicko Daouda Mahama</span> · Portfolio BTS SIO SISR
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

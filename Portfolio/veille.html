@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Veille Technologique E6 — BTS SIO SISR</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header>
+    <a href="index.html" class="logo">DDM · Portfolio</a>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="presentation.html">Présentation</a>
+      <a href="synthese.html">Synthèse</a>
+      <a href="parcours.html">Parcours</a>
+      <a href="realisations.html">Réalisations</a>
+      <a href="veille.html">Veille</a>
+      <a href="competences.html">Compétences</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn">☰</button>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav">
+    <button class="fermer-menu" id="fermerMenu">✕</button>
+    <a href="index.html">Accueil</a>
+    <a href="presentation.html">Présentation</a>
+    <a href="synthese.html">Synthèse</a>
+    <a href="parcours.html">Parcours</a>
+    <a href="realisations.html">Réalisations</a>
+    <a href="veille.html">Veille</a>
+    <a href="competences.html">Compétences</a>
+  </div>
+
+
+  <!-- BANNIÈRE -->
+  <div class="hero-page">
+    <div class="hero-page-fond" style="background-image: url('https://images.unsplash.com/photo-1504711434969-e33886168f5c?q=80&w=1920');"></div>
+    <div class="hero-page-contenu">
+      <div class="fil-ariane">
+        <a href="index.html">Accueil</a> › <span>Veille Technologique E6</span>
+      </div>
+      <h1>🔍 Veille <span>Technologique</span></h1>
+      <p>Ma démarche de veille sur l'automatisation des infrastructures IT.</p>
+    </div>
+  </div>
+
+
+  <!-- SECTION : Sujet & Problématique -->
+  <section>
+
+    <!-- 3 cartes en haut -->
+    <div class="grille-3" style="margin-bottom: 60px;">
+
+      <div class="carte cacher d1">
+        <h3 style="color: var(--bleu-clair); margin-bottom: 10px;">📌 Thème</h3>
+        <p style="color: var(--blanc); font-weight: 600; margin-bottom: 8px; font-size: 0.95rem;">
+          L'automatisation des infrastructures IT avec Ansible
+        </p>
+        <p>Comment l'Infrastructure-as-Code révolutionne-t-il la gestion des parcs serveurs ?</p>
+      </div>
+
+      <div class="carte cacher d2">
+        <h3 style="color: var(--bleu-clair); margin-bottom: 10px;">❓ Problématique</h3>
+        <p>
+          Comment optimiser et fiabiliser la gestion de parcs serveurs hétérogènes
+          (Linux/Windows) grâce à l'automatisation, tout en réduisant les erreurs humaines ?
+        </p>
+      </div>
+
+      <div class="carte cacher d3">
+        <h3 style="color: var(--bleu-clair); margin-bottom: 10px;">🎯 Enjeux</h3>
+        <p>
+          Réduction du temps de déploiement, standardisation des configurations
+          et gestion de la conformité de sécurité à grande échelle.
+        </p>
+      </div>
+
+    </div>
+
+
+    <!-- Image + Outils de veille côte à côte -->
+    <div class="avec-image cacher">
+
+      <img
+        src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?q=80&w=800"
+        alt="Lecture et recherche technologique"
+        style="height: 350px;"
+      >
+
+      <div class="texte">
+        <span class="etiquette">Méthode</span>
+        <h3>Outils de veille utilisés</h3>
+
+        <!-- Liste des outils -->
+        <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 15px;">
+
+          <div style="display: flex; align-items: center; gap: 12px; padding: 12px; background: var(--fond-carte); border: 1px solid var(--bordure); border-radius: 10px;">
+            <span style="font-size: 1.4rem;">📰</span>
+            <div>
+              <strong style="font-size: 0.88rem; display: block;">Feedly — Flux RSS</strong>
+              <span style="font-size: 0.82rem; color: var(--gris);">Blog Ansible, Red Hat, HashiCorp</span>
+            </div>
+          </div>
+
+          <div style="display: flex; align-items: center; gap: 12px; padding: 12px; background: var(--fond-carte); border: 1px solid var(--bordure); border-radius: 10px;">
+            <span style="font-size: 1.4rem;">✉️</span>
+            <div>
+              <strong style="font-size: 0.88rem; display: block;">Newsletters</strong>
+              <span style="font-size: 0.82rem; color: var(--gris);">L'Informaticien, Next INpact, DevOps Weekly</span>
+            </div>
+          </div>
+
+          <div style="display: flex; align-items: center; gap: 12px; padding: 12px; background: var(--fond-carte); border: 1px solid var(--bordure); border-radius: 10px;">
+            <span style="font-size: 1.4rem;">💬</span>
+            <div>
+              <strong style="font-size: 0.88rem; display: block;">Reddit / X (Twitter)</strong>
+              <span style="font-size: 0.82rem; color: var(--gris);">r/sysadmin, r/ansible, #DevOps</span>
+            </div>
+          </div>
+
+          <div style="display: flex; align-items: center; gap: 12px; padding: 12px; background: var(--fond-carte); border: 1px solid var(--bordure); border-radius: 10px;">
+            <span style="font-size: 1.4rem;">📚</span>
+            <div>
+              <strong style="font-size: 0.88rem; display: block;">Documentation officielle</strong>
+              <span style="font-size: 0.82rem; color: var(--gris);">docs.ansible.com, GitHub Collections</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- SECTION : Synthèse + Articles -->
+  <section style="padding-top: 20px;">
+
+    <div class="en-tete">
+      <span class="etiquette">Résultats</span>
+      <h2 class="cacher">Synthèse de la <span>veille</span></h2>
+      <div class="trait cacher d1"></div>
+    </div>
+
+    <!-- Texte de synthèse -->
+    <div class="avec-image inverse cacher" style="margin-bottom: 60px;">
+
+      <img
+        src="https://images.unsplash.com/photo-1607799279861-4dd421887fb3?q=80&w=800"
+        alt="Automatisation et infrastructure code"
+        style="height: 280px;"
+      >
+
+      <div class="texte">
+        <h3>Ce que j'ai appris</h3>
+        <p>
+          Ansible s'est imposé comme l'outil de référence grâce à son approche
+          <strong style="color: var(--blanc);">agentless</strong> (sans agent sur les machines)
+          et sa syntaxe YAML simple à lire.
+        </p>
+        <p>
+          La tendance est au <strong style="color: var(--blanc);">GitOps</strong> :
+          les configurations d'infrastructure sont versionnées dans Git et déployées
+          automatiquement via des pipelines CI/CD.
+        </p>
+        <p>
+          <strong style="color: var(--blanc);">Ansible Vault</strong> permet de chiffrer
+          les données sensibles (mots de passe, clés API) directement dans les playbooks.
+        </p>
+        <br>
+        <a href="#" class="btn-bleu">⬇ Télécharger le rapport de veille</a>
+      </div>
+    </div>
+
+    <!-- Articles analysés -->
+    <h3 style="color: var(--bleu-clair); margin-bottom: 20px; font-size: 1.05rem;">
+      📰 Articles et sources analysés
+    </h3>
+
+    <div class="grille-2">
+
+      <div class="carte cacher d1" style="display: flex; gap: 16px; align-items: flex-start;">
+        <span style="font-size: 1.8rem; font-weight: 700; color: var(--bleu-clair); flex-shrink: 0;">01</span>
+        <div>
+          <h3 style="margin-bottom: 5px;">Ansible vs Terraform : quand utiliser quoi ?</h3>
+          <p>Red Hat Blog · 2025 · Différences entre gestion de configuration et provisioning.</p>
+        </div>
+      </div>
+
+      <div class="carte cacher d2" style="display: flex; gap: 16px; align-items: flex-start;">
+        <span style="font-size: 1.8rem; font-weight: 700; color: var(--bleu-clair); flex-shrink: 0;">02</span>
+        <div>
+          <h3 style="margin-bottom: 5px;">Durcissement de serveurs Linux avec Ansible</h3>
+          <p>ANSSI · 2025 · Automatisation des benchmarks CIS via des rôles Ansible.</p>
+        </div>
+      </div>
+
+      <div class="carte cacher d3" style="display: flex; gap: 16px; align-items: flex-start;">
+        <span style="font-size: 1.8rem; font-weight: 700; color: var(--bleu-clair); flex-shrink: 0;">03</span>
+        <div>
+          <h3 style="margin-bottom: 5px;">Ansible AWX en entreprise</h3>
+          <p>L'Informaticien · 2026 · Retour d'expérience sur Red Hat Automation Platform.</p>
+        </div>
+      </div>
+
+      <div class="carte cacher d4" style="display: flex; gap: 16px; align-items: flex-start;">
+        <span style="font-size: 1.8rem; font-weight: 700; color: var(--bleu-clair); flex-shrink: 0;">04</span>
+        <div>
+          <h3 style="margin-bottom: 5px;">Infrastructure as Code : état de l'art 2026</h3>
+          <p>Next INpact · 2026 · Panorama des outils IaC et adoption dans les PME françaises.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <footer>
+    © 2026 · <span>Dicko Daouda Mahama</span> · Portfolio BTS SIO SISR
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
