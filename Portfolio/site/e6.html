@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Épreuve E6 — Fiches de situation · Dicko Daouda Mahama</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2714%27 fill=%27%232563eb%27/%3E%3Ctext x=%2732%27 y=%2743%27 font-family=%27Arial%27 font-weight=%27bold%27 font-size=%2726%27 text-anchor=%27middle%27 fill=%27white%27%3EDM%3C/text%3E%3C/svg%3E">
+<meta name="theme-color" content="#2563eb">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body id="top">
+<div id="site-header"></div>
+
+<main class="max-w-6xl mx-auto px-4 py-16 space-y-24">
+
+  <header class="reveal">
+    <p class="eyebrow">Épreuve E6 · pratique</p>
+    <h1 class="text-4xl sm:text-5xl font-extrabold text-slate-900 tracking-tight mt-2">Fiches de situations professionnelles</h1>
+    <p class="mt-4 max-w-3xl text-slate-600">Deux situations réelles vécues, l'une centrée <strong class="text-slate-800">réseau</strong>, l'autre <strong class="text-slate-800">système</strong>. Pour chacune : présentation de la situation puis documentation technique téléchargeable.</p>
+    <div class="mt-6 flex flex-wrap gap-3">
+      <a href="#situation1" class="btn btn-ghost">Situation 1 — Réseau</a>
+      <a href="#situation2" class="btn btn-ghost">Situation 2 — Système</a>
+    </div>
+  </header>
+
+  <!-- SITUATION 1 -->
+  <section id="situation1" data-title="Situation 1 · Réseau" class="reveal">
+    <span class="chip">Fiche de situation 1</span>
+    <h2 class="h2 mt-3 todo inline-block">Réseau : [intitulé, ex. segmentation VLAN et routage inter-VLAN]</h2>
+
+    <div class="grid lg:grid-cols-5 gap-6 mt-8">
+      <div class="lg:col-span-3 space-y-4">
+        <div class="card">
+          <h3 class="font-bold text-slate-900">Présentation de la situation</h3>
+          <dl class="mt-4 space-y-4 text-sm">
+            <div><dt class="eyebrow">Contexte</dt><dd class="mt-1 todo">[Entreprise ou structure, date, durée, votre rôle.]</dd></div>
+            <div><dt class="eyebrow">Besoin / problématique</dt><dd class="mt-1 todo">[Ex. séparer les flux utilisateurs, serveurs et invités pour la sécurité et les performances.]</dd></div>
+            <div><dt class="eyebrow">Solution mise en œuvre</dt><dd class="mt-1 todo">[Plan d'adressage, VLAN, trunk, routage inter-VLAN, ACL, tests de connectivité.]</dd></div>
+            <div><dt class="eyebrow">Résultat et bilan</dt><dd class="mt-1 todo">[Ce qui fonctionne, difficultés rencontrées, améliorations possibles.]</dd></div>
+          </dl>
+        </div>
+        <div class="card">
+          <h3 class="font-bold text-slate-900">Compétences mobilisées</h3>
+          <div class="mt-3 flex flex-wrap gap-2"><span class="chip">Gérer le patrimoine informatique</span><span class="chip">Mettre à disposition un service</span><span class="chip">Travailler en mode projet</span></div>
+          <div class="mt-3 flex flex-wrap gap-2"><span class="chip chip-warn">Cisco IOS</span><span class="chip chip-warn">VLAN</span><span class="chip chip-warn">Packet Tracer</span></div>
+        </div>
+      </div>
+      <div class="lg:col-span-2 space-y-4">
+        <img data-ph src="assets/img/e6-situation1-schema.png" alt="Schéma réseau de la situation 1" data-cls="aspect-video" class="rounded-xl border border-blue-100 w-full">
+        <div class="card">
+          <h3 class="font-bold text-slate-900">Documentation</h3>
+          <ul class="mt-3 space-y-2 text-sm">
+            <li><a data-dl download href="assets/docs/E6-Fiche-situation-1.pdf" class="text-blue-600 hover:underline">⬇ Fiche de situation 1 (PDF)</a></li>
+            <li><a data-dl download href="assets/docs/E6-Situation-1-Documentation-technique.pdf" class="text-blue-600 hover:underline">⬇ Documentation technique (PDF)</a></li>
+            <li><a data-dl download href="assets/docs/E6-Situation-1-Configs.zip" class="text-blue-600 hover:underline">⬇ Fichiers de configuration (ZIP)</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SITUATION 2 -->
+  <section id="situation2" data-title="Situation 2 · Système" class="reveal">
+    <span class="chip">Fiche de situation 2</span>
+    <h2 class="h2 mt-3 todo inline-block">Système : [intitulé, ex. déploiement d'Active Directory et de GLPI]</h2>
+
+    <div class="grid lg:grid-cols-5 gap-6 mt-8">
+      <div class="lg:col-span-3 space-y-4">
+        <div class="card">
+          <h3 class="font-bold text-slate-900">Présentation de la situation</h3>
+          <dl class="mt-4 space-y-4 text-sm">
+            <div><dt class="eyebrow">Contexte</dt><dd class="mt-1 todo">[Entreprise ou structure, date, durée, votre rôle.]</dd></div>
+            <div><dt class="eyebrow">Besoin / problématique</dt><dd class="mt-1 todo">[Ex. centraliser l'authentification et le suivi des demandes.]</dd></div>
+            <div><dt class="eyebrow">Solution mise en œuvre</dt><dd class="mt-1 todo">[Installation du serveur, rôles AD/DNS/DHCP, GPO, jonction des postes, tests d'acceptation.]</dd></div>
+            <div><dt class="eyebrow">Résultat et bilan</dt><dd class="mt-1 todo">[Résultats, difficultés, suites envisagées.]</dd></div>
+          </dl>
+        </div>
+        <div class="card">
+          <h3 class="font-bold text-slate-900">Compétences mobilisées</h3>
+          <div class="mt-3 flex flex-wrap gap-2"><span class="chip">Gérer le patrimoine informatique</span><span class="chip">Répondre aux incidents et demandes</span><span class="chip">Mettre à disposition un service</span></div>
+          <div class="mt-3 flex flex-wrap gap-2"><span class="chip chip-warn">Windows Server</span><span class="chip chip-warn">Active Directory</span><span class="chip chip-warn">Linux / Debian</span></div>
+        </div>
+      </div>
+      <div class="lg:col-span-2 space-y-4">
+        <img data-ph src="assets/img/e6-situation2-capture.png" alt="Capture d'écran de la situation 2" data-cls="aspect-video" class="rounded-xl border border-blue-100 w-full">
+        <div class="card">
+          <h3 class="font-bold text-slate-900">Documentation</h3>
+          <ul class="mt-3 space-y-2 text-sm">
+            <li><a data-dl download href="assets/docs/E6-Fiche-situation-2.pdf" class="text-blue-600 hover:underline">⬇ Fiche de situation 2 (PDF)</a></li>
+            <li><a data-dl download href="assets/docs/E6-Situation-2-Documentation-technique.pdf" class="text-blue-600 hover:underline">⬇ Documentation technique (PDF)</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="structure" data-title="Structure d'une fiche" class="reveal">
+    <h2 class="h2">Structure type de chaque fiche</h2>
+    <ol class="mt-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-4 text-sm list-decimal list-inside">
+      <li class="card">Contexte et organisation</li>
+      <li class="card">Besoin et cahier des charges</li>
+      <li class="card">Mise en œuvre pas à pas (captures)</li>
+      <li class="card">Tests, bilan et compétences</li>
+    </ol>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+<script src="assets/site.js"></script>
+</body>
+</html>

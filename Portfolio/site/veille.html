@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille technologique et juridique · Dicko Daouda Mahama</title>
+<meta name="description" content="Veille : disponibilité et résilience des services numériques, entre pannes, failles critiques et attaques DDoS, avec analyse RGPD, CNIL et ANSSI.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2714%27 fill=%27%232563eb%27/%3E%3Ctext x=%2732%27 y=%2743%27 font-family=%27Arial%27 font-weight=%27bold%27 font-size=%2726%27 text-anchor=%27middle%27 fill=%27white%27%3EDM%3C/text%3E%3C/svg%3E">
+<meta name="theme-color" content="#2563eb">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body id="top">
+<div id="site-header"></div>
+
+<main class="max-w-6xl mx-auto px-4 py-16 space-y-20">
+
+  <header class="reveal">
+    <p class="eyebrow">Veille technologique et juridique</p>
+    <h1 class="text-4xl sm:text-5xl font-extrabold text-slate-900 tracking-tight mt-2">Disponibilité et résilience des services numériques</h1>
+    <p class="mt-4 max-w-3xl text-lg text-slate-600">Pourquoi un service en ligne tombe-t-il, et comment l'éviter ? Je suis les pannes, failles critiques et attaques qui le rendent indisponible, puis je les compare au <strong class="text-slate-800">RGPD</strong>, à la <strong class="text-slate-800">CNIL</strong> et à l'<strong class="text-slate-800">ANSSI</strong>.</p>
+    <div class="mt-6 flex flex-wrap gap-3">
+      <a href="#actualites" class="btn btn-primary">Les 5 actualités</a>
+      <a href="#juridique" class="btn btn-ghost">Comparaison juridique</a>
+    </div>
+  </header>
+
+  <!-- LE SUJET -->
+  <section id="sujet" class="reveal">
+    <h2 class="h2">Le sujet en bref</h2>
+    <p class="mt-4 max-w-3xl">La <strong class="text-slate-800">disponibilité</strong> est l'un des trois piliers de la sécurité, avec la confidentialité et l'intégrité. Un service peut s'arrêter pour trois raisons :</p>
+    <div class="grid sm:grid-cols-3 gap-4 mt-6 text-sm stagger">
+      <div class="card flex gap-3 items-start"><span class="text-3xl" aria-hidden="true">⚙️</span><div><h3 class="font-bold text-slate-900">Une erreur technique</h3><p class="mt-1">Mauvaise configuration chez un grand fournisseur.</p></div></div>
+      <div class="card flex gap-3 items-start"><span class="text-3xl" aria-hidden="true">🐞</span><div><h3 class="font-bold text-slate-900">Une faille logicielle</h3><p class="mt-1">Il faut patcher vite, parfois couper le service.</p></div></div>
+      <div class="card flex gap-3 items-start"><span class="text-3xl" aria-hidden="true">💥</span><div><h3 class="font-bold text-slate-900">Une attaque DDoS</h3><p class="mt-1">Un trafic massif sature le site.</p></div></div>
+    </div>
+  </section>
+
+  <!-- ACTUALITÉS -->
+  <section id="actualites" class="reveal">
+    <p class="eyebrow">Octobre 2025 → octobre 2026</p>
+    <h2 class="h2 mt-2">Les 5 actualités suivies</h2>
+    <p class="mt-2 text-sm text-slate-500">Classées par date. Pour remplacer une illustration, déposez une capture dans <code>assets/img/</code> sous le nom indiqué.</p>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8 stagger">
+
+      <article class="card flex flex-col" id="aws">
+        <div class="relative h-36 -mx-1 rounded-xl overflow-hidden bg-gradient-to-br from-amber-400 to-orange-600 flex items-center justify-center text-6xl" aria-hidden="true">☁️
+          <img src="assets/img/veille-aws.webp" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover" onerror="this.remove()">
+        </div>
+        <div class="mt-4 flex flex-wrap items-center gap-2"><span class="chip">Erreur technique</span><span class="text-xs text-slate-500">20/10/2025</span></div>
+        <h3 class="mt-2 text-lg font-bold text-slate-900">Panne AWS (us-east-1)</h3>
+        <p class="mt-2 text-sm">Un défaut dans la gestion DNS de DynamoDB rend le service injoignable et touche de nombreuses applications.</p>
+        <p class="mt-2 text-sm"><strong class="text-slate-800">À retenir :</strong> le DNS est critique, évitez un fournisseur ou une région unique.</p>
+        <a class="mt-auto pt-4 text-sm font-semibold text-blue-600 hover:underline" href="https://www.thousandeyes.com/blog/aws-outage-analysis-october-20-2025" target="_blank" rel="noopener">Lire l'article (ThousandEyes) →</a>
+      </article>
+
+      <article class="card flex flex-col" id="cloudflare">
+        <div class="relative h-36 -mx-1 rounded-xl overflow-hidden bg-gradient-to-br from-sky-400 to-blue-700 flex items-center justify-center text-6xl" aria-hidden="true">🌐
+          <img src="assets/img/veille-cloudflare.jpg" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover" onerror="this.remove()">
+        </div>
+        <div class="mt-4 flex flex-wrap items-center gap-2"><span class="chip">Erreur technique</span><span class="text-xs text-slate-500">18/11/2025</span></div>
+        <h3 class="mt-2 text-lg font-bold text-slate-900">Panne Cloudflare</h3>
+        <p class="mt-2 text-sm">Un fichier de configuration devenu trop gros fait planter les serveurs proxy : erreurs 5xx pendant plusieurs heures. Ce n'était pas une attaque.</p>
+        <p class="mt-2 text-sm"><strong class="text-slate-800">À retenir :</strong> tester et déployer progressivement.</p>
+        <a class="mt-auto pt-4 text-sm font-semibold text-blue-600 hover:underline" href="https://www.it-connect.fr/la-panne-cloudflare-de-6-heures-liee-a-un-fichier-trop-volumineux/" target="_blank" rel="noopener">Lire l'article (IT-Connect) →</a>
+      </article>
+
+      <article class="card flex flex-col" id="laposte">
+        <div class="relative h-36 -mx-1 rounded-xl overflow-hidden bg-gradient-to-br from-yellow-300 to-blue-700 flex items-center justify-center text-6xl" aria-hidden="true">📮
+          <img src="assets/img/veille-laposte.webp" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover" onerror="this.remove()">
+        </div>
+        <div class="mt-4 flex flex-wrap items-center gap-2"><span class="chip chip-ko">Attaque DDoS</span><span class="text-xs text-slate-500">déc. 2025 – janv. 2026</span></div>
+        <h3 class="mt-2 text-lg font-bold text-slate-900">La Poste : DDoS record</h3>
+        <p class="mt-2 text-sm">Pics à 2,5 milliards de paquets par seconde pendant environ deux semaines. La plupart des services sont restés en ligne.</p>
+        <p class="mt-2 text-sm"><strong class="text-slate-800">À retenir :</strong> filtrage et protection anti-DDoS permettent de tenir.</p>
+        <a class="mt-auto pt-4 text-sm font-semibold text-blue-600 hover:underline" href="https://www.generation-nt.com/actualites/cyberattaque-poste-ddos-record-securite-france-2069620" target="_blank" rel="noopener">Lire l'article (Génération NT) →</a>
+      </article>
+
+      <article class="card flex flex-col" id="sgdsn">
+        <div class="relative h-36 -mx-1 rounded-xl overflow-hidden bg-gradient-to-br from-slate-500 to-slate-900 flex items-center justify-center text-6xl" aria-hidden="true">🛡️
+          <img src="assets/img/veille-sgdsn.webp" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover" onerror="this.remove()">
+        </div>
+        <div class="mt-4 flex flex-wrap items-center gap-2"><span class="chip chip-ko">Attaque DDoS</span><span class="text-xs text-slate-500">13/10/2026</span></div>
+        <h3 class="mt-2 text-lg font-bold text-slate-900">Le SGDSN hors ligne 4 h</h3>
+        <p class="mt-2 text-sm">Site public rendu inaccessible par un DDoS revendiqué sur Telegram. Aucune fuite de données signalée.</p>
+        <p class="mt-2 text-sm"><strong class="text-slate-800">À retenir :</strong> prévoir un mode dégradé et une communication de crise.</p>
+        <a class="mt-auto pt-4 text-sm font-semibold text-blue-600 hover:underline" href="https://tech-insider.org/fr/cyberattaque-sgdsn-ddos-4h-2026/" target="_blank" rel="noopener">Lire l'article (Tech Insider) →</a>
+      </article>
+
+      <article class="card flex flex-col border-blue-400 md:col-span-2" id="php">
+        <div class="relative h-36 -mx-1 rounded-xl overflow-hidden bg-gradient-to-br from-indigo-500 to-violet-800 flex items-center justify-center text-6xl" aria-hidden="true">🐘
+          <img src="assets/img/veille-php.jpg" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover" onerror="this.remove()">
+        </div>
+        <div class="mt-4 flex flex-wrap items-center gap-2"><span class="chip chip-warn">Faille critique</span><span class="text-xs text-slate-500">21/10/2026</span><span class="chip chip-ok">La plus récente</span></div>
+        <h3 class="mt-2 text-lg font-bold text-slate-900">PHP2Shell : deux failles critiques dans PHP</h3>
+        <p class="mt-2 text-sm">Alerte CERTFR-2026-ALE-014 : deux vulnérabilités (CVE-2026-109618 et CVE-2026-109619, gravité 9,2/10) permettent d'exécuter du code à distance sans authentification. Correctifs : PHP 8.5.12, 8.4.27, 8.3.36 et 8.2.35. Selon la presse, des sites ont été suspendus par précaution.</p>
+        <p class="mt-2 text-sm"><strong class="text-slate-800">À retenir :</strong> suivre les alertes, patcher vite, abandonner les versions non maintenues (valable pour mon serveur GLPI).</p>
+        <p class="mt-3 text-xs rounded-lg bg-blue-50 border border-blue-100 p-2"><strong class="text-slate-800">À nuancer :</strong> ce n'était pas une panne mondiale d'Internet. Seule l'alerte du CERT-FR est officielle, les coupures viennent de la presse.</p>
+        <p class="mt-auto pt-4 text-sm font-semibold"><a class="text-blue-600 hover:underline" href="https://cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-014/" target="_blank" rel="noopener">Alerte CERT-FR →</a> <span class="text-slate-300 mx-1">·</span> <a class="text-blue-600 hover:underline" href="https://www.sudradio.fr/sud-radio/pourquoi-linternet-mondial-est-paralyse-depuis-24-heures" target="_blank" rel="noopener">Sud Radio →</a></p>
+      </article>
+    </div>
+  </section>
+
+  <!-- JURIDIQUE -->
+  <section id="juridique" class="reveal">
+    <p class="eyebrow">Comparaison juridique</p>
+    <h2 class="h2 mt-2">RGPD, CNIL, ANSSI : que disent les textes ?</h2>
+    <p class="mt-3 max-w-3xl text-sm text-slate-600">L'article 32 du RGPD exige « la confidentialité, l'intégrité, la disponibilité et la résilience constantes des systèmes ». Une indisponibilité est donc aussi une question de conformité.</p>
+
+    <div class="mt-6 overflow-x-auto rounded-xl border border-blue-100">
+      <table class="tbl w-full text-sm min-w-[760px]">
+        <thead><tr><th class="w-[18%]">Actualité</th><th>RGPD</th><th>CNIL</th><th>ANSSI</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><strong class="text-slate-900">Pannes AWS et Cloudflare</strong><br><span class="chip chip-warn mt-1">Résilience</span></td>
+            <td>Art. 32 : disponibilité, résilience et tests réguliers. Art. 28 : le responsable reste garant face à son sous-traitant cloud.</td>
+            <td>Guide sécurité des données : sauvegardes, continuité, maîtrise des prestataires.</td>
+            <td>Éviter le point de défaillance unique ; superviser et maîtriser les changements.</td>
+          </tr>
+          <tr>
+            <td><strong class="text-slate-900">PHP2Shell</strong><br><span class="chip chip-ko mt-1">Corriger vite</span></td>
+            <td>Art. 32 : sécurité adaptée au risque. Si des données sont exposées, art. 33 : notification à la CNIL sous 72 h.</td>
+            <td>Les mises à jour de sécurité sont une mesure de base ; téléservice de notification.</td>
+            <td>Alerte CERT-FR ; guide d'hygiène informatique : tenir les systèmes à jour.</td>
+          </tr>
+          <tr>
+            <td><strong class="text-slate-900">DDoS La Poste et SGDSN</strong><br><span class="chip chip-ok mt-1">Documenter</span></td>
+            <td>Art. 32 : résilience face à l'attaque. Sans fuite de données, pas de notification (art. 33).</td>
+            <td>Documenter l'incident dans le registre interne, même sans notification.</td>
+            <td>Guides anti-DDoS ; mode dégradé et gestion de crise.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="mt-3 text-xs text-slate-500">Analyse indicative, à relire sur <a class="text-blue-600 hover:underline" href="https://www.cnil.fr" target="_blank" rel="noopener">cnil.fr</a> et <a class="text-blue-600 hover:underline" href="https://cyber.gouv.fr" target="_blank" rel="noopener">cyber.gouv.fr</a>. Cadre européen : directive NIS 2 (gestion des vulnérabilités, continuité, signalement des incidents) ; statut de la transposition française à vérifier sur Légifrance.</p>
+  </section>
+
+  <!-- OUTILS + SYNTHÈSE -->
+  <section id="methode" class="reveal">
+    <h2 class="h2">Mes outils de veille</h2>
+    <div class="card mt-6 text-sm">
+      <div class="flex flex-wrap gap-2">
+        <a class="chip hover:bg-blue-100" href="https://cert.cyber.gouv.fr/alerte/" target="_blank" rel="noopener">CERT-FR · alertes</a>
+        <a class="chip hover:bg-blue-100" href="https://cyber.gouv.fr" target="_blank" rel="noopener">ANSSI</a>
+        <a class="chip hover:bg-blue-100" href="https://www.cnil.fr" target="_blank" rel="noopener">CNIL</a>
+        <a class="chip hover:bg-blue-100" href="https://www.it-connect.fr" target="_blank" rel="noopener">IT-Connect</a>
+        <a class="chip hover:bg-blue-100" href="https://www.cybermalveillance.gouv.fr" target="_blank" rel="noopener">Cybermalveillance.gouv.fr</a>
+      </div>
+      <p class="mt-3">Collecter → filtrer (source fiable, date) → analyser (cause, impact, conformité) → présenter.</p>
+      <p class="mt-2 text-xs todo inline-block text-amber-700">✏️ Adaptez cette liste à vos vrais outils (flux RSS, newsletters, alertes).</p>
+      <div class="mt-4 pt-4 border-t border-blue-100 flex flex-wrap items-center justify-between gap-3">
+        <p>En lien avec mes projets : <a class="text-blue-600 hover:underline" href="projets.html#glpi">GLPI</a>, <a class="text-blue-600 hover:underline" href="projets.html#ad">Active Directory</a>, <a class="text-blue-600 hover:underline" href="projets.html#cyber">Cyber</a>.</p>
+        <a data-dl href="assets/docs/Veille-technologique.pdf" download class="btn btn-primary">⬇ Dossier de veille (PDF)</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+<script src="assets/site.js"></script>
+</body>
+</html>

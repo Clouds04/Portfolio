@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projets — Ateliers professionnels · Dicko Daouda Mahama</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2714%27 fill=%27%232563eb%27/%3E%3Ctext x=%2732%27 y=%2743%27 font-family=%27Arial%27 font-weight=%27bold%27 font-size=%2726%27 text-anchor=%27middle%27 fill=%27white%27%3EDM%3C/text%3E%3C/svg%3E">
+<meta name="theme-color" content="#2563eb">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body id="top">
+<div id="site-header"></div>
+
+<main class="max-w-6xl mx-auto px-4 py-16 space-y-24">
+
+  <header class="reveal">
+    <p class="eyebrow">Ateliers professionnels</p>
+    <h1 class="text-4xl sm:text-5xl font-extrabold text-slate-900 tracking-tight mt-2">Mes projets</h1>
+    <p class="mt-4 max-w-3xl text-slate-600">Quatre projets réalisés en formation. Chaque fiche présente l'objectif, l'architecture, les étapes clés, des illustrations et la documentation à télécharger.</p>
+    <div class="mt-5 flex flex-wrap gap-2 text-sm">
+      <a class="chip hover:bg-blue-100" href="#ad">A1 · Active Directory</a>
+      <a class="chip hover:bg-blue-100" href="#glpi">A2 · GLPI</a>
+      <a class="chip hover:bg-blue-100" href="#cyber">A3 · Cybersécurité</a>
+      <a class="chip hover:bg-blue-100" href="#cisco">A4 · Cisco</a>
+    </div>
+  </header>
+
+  <!-- A1 -->
+  <section id="ad" data-title="A1 · Active Directory" class="reveal">
+    <div class="flex items-center gap-3"><span class="chip">Atelier A1</span><span class="chip chip-warn">Windows Server</span></div>
+    <h2 class="h2 mt-3">Projet AD — Annuaire, DNS et DHCP</h2>
+    <div class="grid lg:grid-cols-2 gap-8 mt-6">
+      <div class="space-y-4">
+        <p>Mise en place d'un domaine Active Directory pour centraliser l'authentification, la gestion des utilisateurs et l'attribution automatique des adresses IP.</p>
+        <div class="card"><h3 class="font-bold text-slate-900">Étapes réalisées</h3>
+          <ol class="mt-3 text-sm list-decimal pl-5 space-y-1">
+            <li>Installation de Windows Server en machine virtuelle.</li>
+            <li>Promotion en contrôleur de domaine et configuration DNS.</li>
+            <li>Création des unités d'organisation, groupes et comptes.</li>
+            <li>Service DHCP : étendues, réservations, options.</li>
+            <li>Stratégies de groupe (GPO) et intégration des postes Windows 11.</li>
+          </ol></div>
+        <div class="flex flex-wrap gap-2"><span class="chip">AD DS</span><span class="chip">DNS</span><span class="chip">DHCP</span><span class="chip">GPO</span><span class="chip">VMware / VirtualBox</span></div>
+        <a data-dl download href="assets/docs/Projet-AD.pdf" class="btn btn-primary">⬇ Documentation (PDF)</a>
+      </div>
+      <div class="grid grid-cols-2 gap-3">
+        <img data-ph src="assets/img/ad-1.png" alt="Capture : console Utilisateurs et ordinateurs AD" class="rounded-lg border border-blue-100 w-full">
+        <img data-ph src="assets/img/ad-2.png" alt="Capture : étendue DHCP" class="rounded-lg border border-blue-100 w-full">
+      </div>
+    </div>
+  </section>
+
+  <!-- A2 -->
+  <section id="glpi" data-title="A2 · GLPI" class="reveal">
+    <div class="flex items-center gap-3"><span class="chip">Atelier A2</span><span class="chip chip-warn">Debian · LAMP</span></div>
+    <h2 class="h2 mt-3">Projet GLPI — Inventaire et gestion de tickets</h2>
+    <div class="grid lg:grid-cols-2 gap-8 mt-6">
+      <div class="space-y-4">
+        <p>Déploiement de GLPI pour inventorier le parc informatique et gérer les demandes d'assistance selon une logique ITIL simplifiée.</p>
+        <div class="card"><h3 class="font-bold text-slate-900">Étapes réalisées</h3>
+          <ol class="mt-3 text-sm list-decimal pl-5 space-y-1">
+            <li>Serveur Debian : Apache, PHP, MariaDB.</li>
+            <li>Installation et configuration initiale de GLPI.</li>
+            <li>Remontée d'inventaire (agent) et création des entités.</li>
+            <li>Profils, catégories et circuit de traitement des tickets.</li>
+            <li>Tests d'acceptation et prise en main par les utilisateurs.</li>
+          </ol></div>
+        <div class="flex flex-wrap gap-2"><span class="chip">GLPI</span><span class="chip">Apache</span><span class="chip">MariaDB</span><span class="chip">ITIL</span></div>
+        <a data-dl download href="assets/docs/Projet-GLPI.pdf" class="btn btn-primary">⬇ Documentation (PDF)</a>
+      </div>
+      <div class="grid grid-cols-2 gap-3">
+        <img data-ph src="assets/img/glpi-1.png" alt="Capture : tableau de bord GLPI" class="rounded-lg border border-blue-100 w-full">
+        <img data-ph src="assets/img/glpi-2.png" alt="Capture : ticket GLPI" class="rounded-lg border border-blue-100 w-full">
+      </div>
+    </div>
+  </section>
+
+  <!-- A3 -->
+  <section id="cyber" data-title="A3 · Cybersécurité" class="reveal">
+    <div class="flex items-center gap-3"><span class="chip">Atelier A3</span><span class="chip chip-warn">Sécurité</span></div>
+    <h2 class="h2 mt-3">Projet Cyber — Sécurisation d'une infrastructure</h2>
+    <div class="grid lg:grid-cols-2 gap-8 mt-6">
+      <div class="space-y-4">
+        <p>Renforcement de la sécurité d'une infrastructure : filtrage, durcissement des systèmes, gestion des accès et traçabilité, en s'appuyant sur les recommandations de l'ANSSI.</p>
+        <div class="card"><h3 class="font-bold text-slate-900">Étapes réalisées</h3>
+          <ol class="mt-3 text-sm list-decimal pl-5 space-y-1">
+            <li>Analyse des risques et inventaire des actifs.</li>
+            <li>Règles de pare-feu et segmentation.</li>
+            <li>Durcissement (comptes, services, mises à jour, SSH par clé).</li>
+            <li>Journalisation centralisée et sauvegardes.</li>
+            <li>Tests de vulnérabilité et bilan.</li>
+          </ol></div>
+        <div class="flex flex-wrap gap-2"><span class="chip">Pare-feu</span><span class="chip">Durcissement</span><span class="chip">Logs</span><span class="chip">ANSSI</span></div>
+        <a data-dl download href="assets/docs/Projet-Cyber.pdf" class="btn btn-primary">⬇ Documentation (PDF)</a>
+      </div>
+      <div class="grid grid-cols-2 gap-3">
+        <img data-ph src="assets/img/cyber-1.png" alt="Capture : règles de pare-feu" class="rounded-lg border border-blue-100 w-full">
+        <img data-ph src="assets/img/cyber-2.png" alt="Capture : résultat de scan" class="rounded-lg border border-blue-100 w-full">
+      </div>
+    </div>
+  </section>
+
+  <!-- A4 -->
+  <section id="cisco" data-title="A4 · Cisco" class="reveal">
+    <div class="flex items-center gap-3"><span class="chip">Atelier A4</span><span class="chip chip-warn">Réseau</span></div>
+    <h2 class="h2 mt-3">Projet Cisco — Architecture réseau segmentée</h2>
+    <div class="grid lg:grid-cols-2 gap-8 mt-6">
+      <div class="space-y-4">
+        <p>Conception et configuration d'un réseau d'entreprise segmenté en VLAN avec routage inter-VLAN, d'abord simulé sous Packet Tracer puis sur équipements physiques.</p>
+        <div class="card"><h3 class="font-bold text-slate-900">Étapes réalisées</h3>
+          <ol class="mt-3 text-sm list-decimal pl-5 space-y-1">
+            <li>Plan d'adressage IP en VLSM.</li>
+            <li>VLAN, ports access et trunk sur les switchs.</li>
+            <li>Routage statique puis dynamique (OSPF).</li>
+            <li>Routage inter-VLAN, DHCP relais, ACL.</li>
+            <li>Câblage et tests de connectivité sur matériel réel.</li>
+          </ol></div>
+        <div class="flex flex-wrap gap-2"><span class="chip">VLAN</span><span class="chip">VLSM</span><span class="chip">OSPF</span><span class="chip">Packet Tracer</span></div>
+        <a data-dl download href="assets/docs/Projet-Cisco.pdf" class="btn btn-primary">⬇ Documentation (PDF)</a>
+      </div>
+      <div class="grid grid-cols-2 gap-3">
+        <img data-ph src="assets/img/cisco-1.png" alt="Capture : topologie Packet Tracer" class="rounded-lg border border-blue-100 w-full">
+        <img data-ph src="assets/img/cisco-2.png" alt="Photo : montage sur équipements réels" class="rounded-lg border border-blue-100 w-full">
+      </div>
+    </div>
+  </section>
+
+  <p class="text-sm text-amber-700 todo inline-block">✏️ Ajustez les étapes à vos vrais projets, ajoutez vos captures dans <code>site/assets/img/</code> et vos PDF dans <code>site/assets/docs/</code> (mêmes noms que dans les liens).</p>
+</main>
+
+<div id="site-footer"></div>
+<script src="assets/site.js"></script>
+</body>
+</html>
